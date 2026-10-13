@@ -1,0 +1,14 @@
+{
+  "name": "omaha-lab-reader",
+  "private": true,
+  "description": "Card-photo reader for the Android build, bundled into one browser script.",
+  "scripts": {
+    "build": "esbuild reader.js --bundle --minify --format=iife --platform=browser --target=chrome100 --outfile=../../android/assets/reader.bundle.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.133.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}
